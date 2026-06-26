@@ -1,0 +1,2 @@
+name: pr-description
+description: Gera uma descrição de PR (resumo, o que mudou, arquivos afetados) a partir do git diff/log contra uma branch base.
