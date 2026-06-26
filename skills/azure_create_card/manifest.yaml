@@ -1,0 +1,2 @@
+name: azure-create-card
+description: Cria um work item (Task, User Story, Bug, etc.) em um board do Azure DevOps.
