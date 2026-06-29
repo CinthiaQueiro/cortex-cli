@@ -1,0 +1,2 @@
+name: test-generator
+description: Gera testes automatizados (pytest) para um arquivo Python usando a API da Claude.
