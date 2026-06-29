@@ -38,3 +38,13 @@ def get_azure_devops_config() -> AzureDevOpsConfig:
         )
 
     return AzureDevOpsConfig(org=org, project=project, pat=pat)
+
+
+def get_anthropic_api_key() -> str:
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        raise RuntimeError(
+            "Variável de ambiente faltando: ANTHROPIC_API_KEY. "
+            "Configure-a no .env (dev) ou nas variáveis do pipeline (tst/prd)."
+        )
+    return api_key
